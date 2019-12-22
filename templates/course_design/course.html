@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程</title>
+</head>
+<body>
+<table border="1">
+        <tr>
+            <th>课程号</th>
+            <th>课程名</th>
+            <th>课程学分</th>
+        </tr>
+    {% for c in courses %}
+        <tr>
+            <td>{{ c.cno }}</td>
+            <td>{{ c.cname }}</td>
+            <td>{{ c.ccredit }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

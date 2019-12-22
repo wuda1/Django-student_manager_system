@@ -1,0 +1,25 @@
+/*
+ * 在这里编辑主页的样式表
+ */
+/*
+ * 设置body
+ */
+body{
+	background: url(../img/7.png) no-repeat;
+	background-size: 100%;
+}
+
+
+.w{
+	background: #bef;	
+	float: right;
+	display: inline-block;
+	margin-top: -50px;
+}
+
+.nav{
+	overflow: hidden;
+}
+.box3{
+				clear: left;
+     }

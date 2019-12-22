@@ -1,0 +1,47 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>数据库作业</title>
+		<!--引入外部的默认样式来清除浏览器的默认样式-->
+		<link rel="stylesheet" type="text/css" href="{% static 'course_design/css/reset.css' %}"/>
+		<!--引入page-index样式表-->
+		<link rel="stylesheet" type="text/css" href="{% static 'course_design/css/page-index.css' %}"/>
+		
+	</head>
+	<body>
+		<div class="header w">
+			<div class="logo">
+				<tr>
+					<td rowspan="5">
+				<img src="{% static 'course_design/img/1.gif' %}" alt="网站的logo" />
+				<img src="{% static 'course_design/img/6.png' %}" alt="网站的logo" />
+						
+					</td>
+				</tr>
+				
+			</div>
+		</div>
+			<div class="content w">
+				<form action="/target/" method="post">
+				<img src="{% static 'course_design/img/3.gif' %}" alt="身份" class="img01" />
+				<select name="identification" class="select" >
+					<option value="student" selected="selected">学生</option>
+					<option value="teacher">老师</option>
+				</select>
+				<img src="{% static 'course_design/img/4.gif' %}" alt="学号" class="img02" />
+				<input type="text"  name="studentnumber" class="input01" style="width:10%" placeholder="请输入学号" value="" />
+				<img src="{% static 'course_design/img/5.gif' %}" alt="密码" class="img03" name="password"/>
+				<input type="password"  name="password"  class="input02" style="width:8%" placeholder="请输入密码" value="" />
+				<input type="submit" value="登录" class="login" />
+				</form>
+			</div>
+	
+
+<!--[if IE 6]>
+<script src="{% static 'course_design/js/DD_belatedPNG_0.0.8a-min.js' %}"></script>
+<script type="text/javascript">DD_belatedPNG.fix('img');</script>
+<![endif]-->
+	</body>
+</html>

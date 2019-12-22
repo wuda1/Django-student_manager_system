@@ -1,0 +1,69 @@
+/*
+ * 在这里编辑主页的样式表
+ */
+/*
+ * 设置body
+ */
+body{
+	background: url(../img/2.gif);
+}
+/*固定元素宽度和居中*/
+.w{
+		  	width: 805px;
+		  	margin: 0 auto;
+  }
+.header .logo{
+	vertical-align: bottom;
+	margin-top:100px ;
+	margin-bottom:0 ;
+	margin-left: -1px;/*设置做外边距为455px*/
+	margin-right: 1px;
+}
+.content .img01{
+	position: absolute;
+}
+.content .img02{
+	position: absolute;
+	left: 138px;
+}
+.content .img03{
+	position: absolute;
+	left: 290px;
+}
+.header{
+/*	height: 600px;*/
+	background: white;
+}
+.content{
+	height: 100px;
+	background: white;
+	position: relative;
+}
+.content .select{
+	position: absolute;
+    left: 87px;
+    top:15px
+}
+.content .input01{
+	position: absolute;
+	left: 205px;
+	top:15px
+}
+.content .input02{
+	position: absolute;
+	top: 15px;
+	left: 355px;
+}
+.content .login{
+    position: absolute;
+	top: 15px;
+	left: 450px;
+}
+.content .reset:hover{
+	color: red;
+}
+.content .reset{
+    position: absolute;
+	top: 15px;
+	left: 500px;
+}

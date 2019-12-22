@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程</title>
+</head>
+<body>
+<table border="1">
+        <tr>
+            <td>学号</td>
+            <td>{{ sno }}</td>
+            <td>姓名</td>
+            <td>{{ sname }}</td>
+        </tr>
+        <tr>
+            <th>课程号</th>
+            <th>课程名</th>
+            <th>课程学分</th>
+            <th>课程成绩</th>
+        </tr>
+    {% for sc in sclist %}
+        <tr>
+            <td>{{ sc.cno }}</td>
+            <td>{{ sc.cno.cname }}</td>
+            <td>{{ sc.cno.ccredit }}</td>
+            <td>{{ sc.grade|default:"无" }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

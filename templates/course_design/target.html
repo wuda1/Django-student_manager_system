@@ -1,0 +1,81 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="{% static 'course_design/css/page-target01.css' %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static 'course_design/css/reset.css' %}"/>
+		<style type="text/css">
+			
+			.nav{
+				/*去除项目符号*/
+				list-style: none;
+				background-color:rgb(0,212,251);
+				
+				/*在ie6中设置了一个宽度就相当与设置了一个haslayout*/
+				width: 1000px;
+				/*设置元素居中*/
+				margin: 50px auto;
+				/*overflow: hidden;*/
+		    }
+		    
+		    
+		    /*清除浏览器默认的边距*/
+		    *{
+		    	margin: 0;
+		    	padding: 0;
+		    }
+		    .nav li{
+		    	
+		    	float: left;
+		    	/*设置子元素li为父元素nvg的250px*/
+		    	width: 25%;
+		    }
+		    .nav a{
+		    	/*将a转换为块元素*/
+		    	display: inline-block;
+		    	width: 100%;
+		    	/*使得字体居中*/
+		    	text-align: center;
+		    	/*取消超链接的下划线*/
+		    	text-decoration: none;
+		    	/*调上下边框距离*/
+		    	padding: 5px 0;
+		    	color: white;
+		    	/*设置加粗*/
+		    	font-weight: bold;
+		    	/*设置背景*/
+		    	
+		    }
+		   
+		   /*鼠标移动显示*/
+			.nav a:hover{
+				background-color:pink ;
+				/*color:rgb(216,76,41);*/
+			}
+			
+			
+		</style>
+		<title>导航条</title>
+	</head>
+	<body>
+		<div class="w">
+		<tr>
+		<td >你好!</td>
+		<td >{{ studentname }}</td>
+		<td >,你的学号:</td>
+		<td >{{ sno }}</td>
+		<td >欢迎你！</td>
+		</tr>
+		</div>
+		
+		
+		<ul class="nav">
+			<li><a href="{% url 'course_design:course' %}">课程</a></li>
+			<li><a href="#">选课</a></li>
+			<li><a href="/students/">学生信息</a></li>
+			<li><a href="#">关于</a></li>
+			<div class="box3"></div>
+		</ul>
+	</body>
+</html>
